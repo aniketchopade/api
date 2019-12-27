@@ -15,3 +15,5 @@
         }```
 }
 
+2. setup dependencies npm install
+3. run npm start

@@ -5,13 +5,13 @@
         ```{
            "development": {
             "MONGODB_USER": "api",
-            "MONGODB_PW": "MCOqTsC9cZPZi1m1",
-            "MONGODB_URI": "cluster0-4sxsm.mongodb.net/api"
+            "MONGODB_PW": "XXXXXXXXXXXXXXXXXX",
+            "MONGODB_URI": "XXXXXXXXXXXXXXXXXX"
         }, 
             "production": {      
             "MONGODB_USER": "api",
-            "MONGODB_PW": "9Y4Tt3RQSmjBTs",
-            "MONGODB_URI": "cluster0-4sxsm.mongodb.net/test"
+            "MONGODB_PW": "XXXXXXXXXXXXXXXX",
+            "MONGODB_URI": "XXXXXXXXXXXXXXXXXXXXXX"
         }```
 }
 

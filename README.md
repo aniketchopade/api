@@ -1,5 +1,5 @@
 # api
-## list of free domain names
+## list free domain names
 1. Setup index.json in env folder
     - Template goes like this 
         ```{
@@ -17,3 +17,7 @@
 
 2. setup dependencies npm install
 3. run npm start
+4. setup MongoDB database 
+    a. Database list goes here - https://gist.github.com/tbrianjones/5992856/
+    b. or request access to me at aniketchopade@gmail.com
+5. curl localhost:1234/providers/<domain-name>

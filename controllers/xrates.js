@@ -29,3 +29,12 @@ exports.xrates_details = function (req, res,next) {
       })    
     }    
 };
+
+exports.xrates_index= function (req, res,next) {
+    condition = {}
+    projection = {currency:1, _id: 0 }
+    XRates.find(condition, projection , (err,documents)=>{
+        documents = documents.map(e => e.currency)
+        res.send(documents)
+    })
+};

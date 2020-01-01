@@ -10,5 +10,8 @@ router.get('/test', xrates_controller.test);
 
 router.get('/:to/:from', xrates_controller.xrates_details);
 
+router.get('/', xrates_controller.xrates_index);
+
+
 
 module.exports = router;

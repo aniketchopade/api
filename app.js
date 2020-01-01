@@ -4,6 +4,7 @@ var express = require('express');
 var bodyParser = require('body-parser');
 var config = require('./config/common').config()
 var provider = require('./routes/provider'); // Imports routes for the products
+var xrates = require('./routes/xrates'); // Imports routes for the xrates
 var app = express();
 
 
@@ -21,8 +22,9 @@ db.on('error', console.error.bind(console, 'MongoDB connection error:'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: false}));
 app.use('/provider', provider);
+app.use('/xrates', xrates);
 
-var port = 1234;
+var port = config.SERVER_PORT;
 
 app.listen(port, () => {
     console.log('Server is up and running on port numner ' + port);

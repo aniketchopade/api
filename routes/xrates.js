@@ -10,6 +10,9 @@ router.get('/test', xrates_controller.test);
 
 router.get('/:to/:from', xrates_controller.xrates_details);
 
+router.get('/:iso', xrates_controller.xrates_name);
+
+
 router.get('/', xrates_controller.xrates_index);
 
 

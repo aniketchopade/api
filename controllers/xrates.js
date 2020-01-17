@@ -1,4 +1,6 @@
 var XRates = require('../models/xrates');
+var Currency = require('../models/currencies');
+
 
 //Simple version, without validation or sanitation
 exports.test = function (req, res) {
@@ -37,4 +39,14 @@ exports.xrates_index= function (req, res,next) {
         documents = documents.map(e => e.currency)
         res.send(documents)
     })
+};
+
+exports.xrates_name= function (req, res,next) {
+  iso = req.params.iso.toUpperCase()
+  condition = {ISO: iso}
+  console.log(condition)
+  //projection = {Name:1, _id: 0 }
+  Currency.findOne({iso: "INR"},  (err,document)=>{
+      res.send(document)
+  })
 };
